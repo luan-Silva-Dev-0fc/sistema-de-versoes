@@ -1,6 +1,6 @@
 #  GasoLink - Painel Administrativo
 
-Este é o sistema de gerenciamento de versões e inteligência em combustíveis do ecossistema GasoLink.
+Este é o sistema de gerenciamento de versões  GasoLink.
 
 ##  Acesso Restrito
 O acesso a este painel é estritamente limitado a usuários autorizados.
