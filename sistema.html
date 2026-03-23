@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gasolink | Painel de Versões</title>
+    <link rel="stylesheet" href="./style/sistema.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>GASOLINK</h1>
+        <p>Gerenciamento de Atualizações (APK)</p>
+      </header>
+
+      <section class="form-section">
+        <h2 id="form-title">Publicar Nova Versão</h2>
+        <input type="hidden" id="version-id" />
+        <input type="text" id="nomeVersao" placeholder="Ex: 11.0.1" />
+        <input
+          type="text"
+          id="link"
+          placeholder="Link do Cloudflare R2 (https://...)"
+        />
+        <button id="btn-save" onclick="salvarVersao()">PUBLICAR AGORA</button>
+        <button
+          id="btn-cancel"
+          onclick="limparFormulario()"
+          style="display: none; background: #555"
+        >
+          CANCELAR
+        </button>
+      </section>
+
+      <section class="list-section">
+        <h2>Versões Ativas</h2>
+        <div id="lista-versoes" class="grid-versoes">
+          <p>Carregando versões...</p>
+        </div>
+      </section>
+    </div>
+    <script src="./script/sistema.js"></script>
+  </body>
+</html>

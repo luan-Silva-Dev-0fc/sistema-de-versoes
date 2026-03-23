@@ -1,0 +1,11 @@
+# Dependências do Node
+node_modules/
+
+# Arquivos de configuração de pacotes
+package.json
+package-lock.json
+
+# Outros arquivos comuns que é bom ignorar
+.DS_Store
+Thumbs.db
+.env

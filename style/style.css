@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  color: #444444;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card {
+  flex: 1;
+  background-color: #ffffff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0a1128;
+  margin-bottom: 5px;
+}
+
+.welcome-subtitle {
+  font-size: 16px;
+  color: #718096;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.input-group input {
+  background-color: #f7f9fc;
+  height: 60px;
+  border-radius: 18px;
+  padding: 0 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.forgot-link {
+  align-self: flex-end;
+  margin-top: 12px;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #000000;
+  height: 65px;
+  border-radius: 22px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+.guest-button {
+  background: none;
+  border: none;
+  color: #718096;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-container {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 20px;
+  color: #718096;
+  font-size: 14px;
+}
+
+.signup-link {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
