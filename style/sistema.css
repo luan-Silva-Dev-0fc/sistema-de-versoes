@@ -1,190 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family: 'Inter', sans-serif; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-body { 
-    background-color: #f8f9fa; /* Cinza bem claro para destacar os cards brancos */
-    color: #1a1a1a; 
-    padding: 60px 20px; 
-    line-height: 1.6;
+body {
+  background-color: #f8f9fa; /* Cinza bem claro para destacar os cards brancos */
+  color: #1a1a1a;
+  padding: 60px 20px;
+  line-height: 1.6;
 }
 
-.container { 
-    max-width: 900px; 
-    margin: 0 auto; 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Header mais elegante */
-header { 
-    margin-bottom: 50px; 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
-    padding-bottom: 30px; 
-    text-align: center;
+header {
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-header h1 { 
-    letter-spacing: 6px; 
-    font-weight: 800; 
-    text-transform: uppercase;
-    font-size: 2.5rem;
+header h1 {
+  letter-spacing: 6px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 header p {
-    opacity: 0.5;
-    font-size: 0.9rem;
-    margin-top: 5px;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 /* Seção de Formulário Estilo Card */
-.form-section { 
-    background: #ffffff; 
-    padding: 40px; 
-    margin-bottom: 40px; 
-    border-radius: 24px; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.03); /* Sombra suave */
-    border: 1px solid #f1f1f1;
+.form-section {
+  background: #ffffff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03); /* Sombra suave */
+  border: 1px solid #f1f1f1;
 }
 
-.form-section h2 { 
-    margin-bottom: 25px; 
-    font-size: 13px; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    font-weight: 700;
-    color: #666;
+.form-section h2 {
+  margin-bottom: 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #666;
 }
 
 /* Inputs arredondados e modernos */
-input { 
-    width: 100%; 
-    padding: 16px 20px; 
-    margin-bottom: 20px; 
-    border: 1.5px solid #eee; 
-    background: #fdfdfd; 
-    font-size: 15px; 
-    outline: none; 
-    border-radius: 14px;
-    transition: all 0.3s ease;
+input {
+  width: 100%;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 1.5px solid #eee;
+  background: #fdfdfd;
+  font-size: 15px;
+  outline: none;
+  border-radius: 14px;
+  transition: all 0.3s ease;
 }
 
-input:focus { 
-    border-color: #000; 
-    background: #fff;
-    box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+input:focus {
+  border-color: #000;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Botão Principal com Micro-interação */
-button { 
-    background: #000; 
-    color: #fff; 
-    border: none; 
-    padding: 18px 35px; 
-    font-weight: 600; 
-    cursor: pointer; 
-    letter-spacing: 1px; 
-    border-radius: 14px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
+button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 18px 35px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 14px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 }
 
-button:hover { 
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 button:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* Listagem de Versões */
-.grid-versoes { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 18px; 
-    margin-top: 30px; 
+.grid-versoes {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
 }
 
-.card-versao { 
-    background: #fff;
-    border: 1px solid #f1f1f1; 
-    padding: 24px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    border-radius: 20px;
-    transition: all 0.3s ease;
+.card-versao {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
 .card-versao:hover {
-    border-color: #000;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+  border-color: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
 }
 
-.card-info h3 { 
-    font-size: 20px; 
-    font-weight: 800;
-    margin-bottom: 4px; 
+.card-info h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 4px;
 }
 
-.card-info p { 
-    font-size: 13px; 
-    color: #2563eb; /* Azul sutil para links */
-    opacity: 0.8; 
-    word-break: break-all;
-    font-weight: 500;
+.card-info p {
+  font-size: 13px;
+  color: #2563eb; /* Azul sutil para links */
+  opacity: 0.8;
+  word-break: break-all;
+  font-weight: 500;
 }
 
 /* Botões de Ação Menores */
-.actions { 
-    display: flex; 
-    gap: 12px; 
+.actions {
+  display: flex;
+  gap: 12px;
 }
 
-.btn-edit { 
-    background: #f4f4f4; 
-    color: #000;
-    padding: 10px 20px; 
-    font-size: 12px; 
-    width: auto;
-    border-radius: 10px;
+.btn-edit {
+  background: #f4f4f4;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 12px;
+  width: auto;
+  border-radius: 10px;
 }
 
 .btn-edit:hover {
-    background: #000;
-    color: #fff;
+  background: #000;
+  color: #fff;
 }
 
-.btn-delete { 
-    background: #fff0f0; 
-    color: #ff3b30;
-    padding: 10px 20px; 
-    font-size: 12px; 
-    width: auto;
-    border-radius: 10px;
+.btn-delete {
+  background: #fff0f0;
+  color: #ff3b30;
+  padding: 10px 20px;
+  font-size: 12px;
+  width: auto;
+  border-radius: 10px;
 }
 
 .btn-delete:hover {
-    background: #ff3b30;
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(255, 59, 48, 0.2);
+  background: #ff3b30;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.2);
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
-    .card-versao {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-    .actions {
-        width: 100%;
-    }
-    .actions button {
-        flex: 1;
-    }
+  .card-versao {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .actions {
+    width: 100%;
+  }
+  .actions button {
+    flex: 1;
+  }
 }
