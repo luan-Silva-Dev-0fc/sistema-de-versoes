@@ -1,190 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Inter", sans-serif; }
+
+body { background-color: #f4f7f6; color: #1a1a1a; padding: 40px 20px; }
+
+.container { max-width: 850px; margin: 0 auto; }
+
+header { text-align: center; margin-bottom: 40px; }
+header h1 { letter-spacing: 4px; font-weight: 800; font-size: 2.2rem; }
+header p { opacity: 0.5; font-size: 0.85rem; margin-top: 5px; }
+
+.form-section { 
+    background: #fff; padding: 30px; border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee;
 }
 
-body {
-  background-color: #f8f9fa; /* Cinza bem claro para destacar os cards brancos */
-  color: #1a1a1a;
-  padding: 60px 20px;
-  line-height: 1.6;
+.form-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.form-header h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #888; }
+
+.btn-logout { width: auto; padding: 5px 15px; font-size: 10px; background: #eee; color: #666; }
+
+input { 
+    width: 100%; padding: 14px; margin-bottom: 15px; border: 1.5px solid #eee; 
+    border-radius: 12px; font-size: 14px; transition: 0.3s;
+}
+input:focus { border-color: #000; outline: none; background: #fff; }
+
+.button-group { display: flex; gap: 10px; }
+
+button { 
+    background: #000; color: #fff; border: none; padding: 15px; 
+    font-weight: 600; border-radius: 12px; cursor: pointer; transition: 0.3s; width: 100%;
+}
+button:hover { opacity: 0.8; transform: translateY(-1px); }
+
+.grid-versoes { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+
+.card-versao { 
+    background: #fff; padding: 20px; border-radius: 16px; 
+    display: flex; justify-content: space-between; align-items: center;
+    border: 1px solid #eee;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-}
+.card-info h3 { font-size: 18px; margin-bottom: 4px; }
+.card-info p { font-size: 12px; color: #2563eb; word-break: break-all; }
 
-/* Header mais elegante */
-header {
-  margin-bottom: 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 30px;
-  text-align: center;
-}
+.actions { display: flex; gap: 8px; }
+.btn-edit { background: #f0f0f0; color: #000; padding: 8px 15px; width: auto; font-size: 11px; }
+.btn-delete { background: #fff0f0; color: #ff3b30; padding: 8px 15px; width: auto; font-size: 11px; }
 
-header h1 {
-  letter-spacing: 6px;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-}
+.loading { text-align: center; opacity: 0.5; padding: 20px; }
 
-header p {
-  opacity: 0.5;
-  font-size: 0.9rem;
-  margin-top: 5px;
-}
-
-/* Seção de Formulário Estilo Card */
-.form-section {
-  background: #ffffff;
-  padding: 40px;
-  margin-bottom: 40px;
-  border-radius: 24px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03); /* Sombra suave */
-  border: 1px solid #f1f1f1;
-}
-
-.form-section h2 {
-  margin-bottom: 25px;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: #666;
-}
-
-/* Inputs arredondados e modernos */
-input {
-  width: 100%;
-  padding: 16px 20px;
-  margin-bottom: 20px;
-  border: 1.5px solid #eee;
-  background: #fdfdfd;
-  font-size: 15px;
-  outline: none;
-  border-radius: 14px;
-  transition: all 0.3s ease;
-}
-
-input:focus {
-  border-color: #000;
-  background: #fff;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
-}
-
-/* Botão Principal com Micro-interação */
-button {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 18px 35px;
-  font-weight: 600;
-  cursor: pointer;
-  letter-spacing: 1px;
-  border-radius: 14px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
-/* Listagem de Versões */
-.grid-versoes {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-top: 30px;
-}
-
-.card-versao {
-  background: #fff;
-  border: 1px solid #f1f1f1;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
-
-.card-versao:hover {
-  border-color: #000;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
-}
-
-.card-info h3 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-
-.card-info p {
-  font-size: 13px;
-  color: #2563eb; /* Azul sutil para links */
-  opacity: 0.8;
-  word-break: break-all;
-  font-weight: 500;
-}
-
-/* Botões de Ação Menores */
-.actions {
-  display: flex;
-  gap: 12px;
-}
-
-.btn-edit {
-  background: #f4f4f4;
-  color: #000;
-  padding: 10px 20px;
-  font-size: 12px;
-  width: auto;
-  border-radius: 10px;
-}
-
-.btn-edit:hover {
-  background: #000;
-  color: #fff;
-}
-
-.btn-delete {
-  background: #fff0f0;
-  color: #ff3b30;
-  padding: 10px 20px;
-  font-size: 12px;
-  width: auto;
-  border-radius: 10px;
-}
-
-.btn-delete:hover {
-  background: #ff3b30;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.2);
-}
-
-/* Responsividade */
 @media (max-width: 600px) {
-  .card-versao {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .actions {
-    width: 100%;
-  }
-  .actions button {
-    flex: 1;
-  }
+    .card-versao { flex-direction: column; align-items: flex-start; gap: 15px; }
+    .actions { width: 100%; }
 }

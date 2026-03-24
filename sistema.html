@@ -3,83 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-
-    <script src="./script/core-min.js"></script>
-
     <title>Gasolink | Painel de Versões</title>
     <link rel="stylesheet" href="./style/sistema.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          "
-        >
-          <h1>GASOLINK</h1>
-          <button
-            onclick="fazerLogout()"
-            style="
-              background: #ff4444;
-              padding: 5px 15px;
-              border-radius: 5px;
-              cursor: pointer;
-              border: none;
-              color: white;
-              font-weight: bold;
-            "
-          >
-            SAIR
-          </button>
-        </div>
+        <h1>GASOLINK</h1>
         <p>Gerenciamento de Atualizações (APK)</p>
       </header>
 
       <section class="form-section">
-        <h2 id="form-title">Publicar Nova Versão</h2>
+        <div class="form-header">
+            <h2 id="form-title">Publicar Nova Versão</h2>
+            <button class="btn-logout" onclick="logout()" title="Sair do Painel">SAIR</button>
+        </div>
+        
         <input type="hidden" id="version-id" />
-        <input type="text" id="nomeVersao" placeholder="Ex: 11.0.1" />
-        <input
-          type="text"
-          id="link"
-          placeholder="Link do Cloudflare R2 (https://...)"
-        />
-        <button id="btn-save" onclick="salvarVersao()">PUBLICAR AGORA</button>
-        <button
-          id="btn-cancel"
-          onclick="limparFormulario()"
-          style="display: none; background: #555"
-        >
-          CANCELAR
-        </button>
+        <div class="input-group">
+            <input type="text" id="nomeVersao" placeholder="Ex: 11.0.1" />
+            <input type="text" id="link" placeholder="Link do Cloudflare R2 (https://...)" />
+        </div>
+        
+        <div class="button-group">
+            <button id="btn-save" onclick="salvarVersao()">PUBLICAR AGORA</button>
+            <button id="btn-cancel" onclick="limparFormulario()" style="display: none; background: #666">CANCELAR</button>
+        </div>
       </section>
 
       <section class="list-section">
         <h2>Versões Ativas</h2>
         <div id="lista-versoes" class="grid-versoes">
-          <p>Carregando versões...</p>
+          <p class="loading">Carregando versões...</p>
         </div>
       </section>
     </div>
-
     <script src="./script/sistema.js"></script>
-
-    <script>
-      // Função simples de logout para o botão que adicionamos
-      function fazerLogout() {
-        localStorage.removeItem("_gl_session");
-        window.location.replace("index.html");
-      }
-    </script>
   </body>
 </html>

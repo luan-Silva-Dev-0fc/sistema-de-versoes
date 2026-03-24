@@ -1,67 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GasoLink - Login</title>
-
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-
-    <script>
-      if (localStorage.getItem("_gl_session")) {
-        window.location.replace("sistema.html");
-      }
-    </script>
-
     <link rel="stylesheet" href="./style/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <header class="top-section">
-        <h1 class="logo-text">GasoLink</h1>
-        <p class="tagline">Inteligência em combustíveis.</p>
-      </header>
+        <header class="top-section">
+            <h1 class="logo-text">GasoLink</h1>
+            <p class="tagline">Inteligência em combustíveis.</p>
+        </header>
 
-      <main class="card">
-        <div class="welcome-header">
-          <h2 class="welcome-title">Bem-vindo!</h2>
-          <p class="welcome-subtitle">Identifique-se para continuar.</p>
-        </div>
+        <main class="card">
+            <div class="welcome-header">
+                <h2 class="welcome-title">Bem-vindo!</h2>
+                <p class="welcome-subtitle">Identifique-se para continuar.</p>
+            </div>
 
-        <form id="loginForm">
-          <div class="input-group">
-            <label for="email">E-MAIL</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="usuario@email.com"
-              required
-            />
-          </div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">E-MAIL</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="usuario@email.com"
+                        required
+                    />
+                </div>
 
-          <div class="input-group">
-            <label for="password">SENHA</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="........"
-              required
-            />
-          </div>
+                <div class="input-group">
+                    <label for="password">SENHA</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="........"
+                        required
+                    />
+                   
+                </div>
 
-          <button type="submit" id="loginBtn" class="login-button">
-            <span id="btnText">Entrar</span>
-            <div id="loader" class="loader hidden"></div>
-          </button>
-        </form>
-      </main>
+                <button type="submit" id="loginBtn" class="login-button">
+                    <span id="btnText">Entrar</span>
+                    <div id="loader" class="loader hidden"></div>
+                </button>
+            </form>
+
+          
+
+        </main>
     </div>
 
     <script src="./script/script.js"></script>
-  </body>
+</body>
 </html>
