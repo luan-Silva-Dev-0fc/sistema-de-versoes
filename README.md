@@ -1,6 +1,6 @@
 # GasoLink - Painel Administrativo
 
-Este é o sistema de gerenciamento de versões e inteligência em combustíveis do ecossistema GasoLink.
+Este é o sistema de gerenciamento de versões  GasoLink.
 
 ## Acesso Restrito
 
@@ -16,5 +16,9 @@ O acesso a este painel é estritamente limitado a usuários autorizados.
 - **Banco de Dados:** Firebase Firestore
 
 ---
+<<<<<<< HEAD
 
 _Desenvolvido para monitoramento e controle de versões do App GasoLink._
+=======
+*Desenvolvido para monitoramento e controle de versões do App GasoLink.*
+>>>>>>> ce32ed76ef6cfc19845d205c6803fcb3942cbab6
